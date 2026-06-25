@@ -50,11 +50,13 @@ Com os nós ativos, as interfaces de comunicação ponto a ponto foram configura
   ip addr add 10.0.0.1/24 dev eth1
   ip addr show dev eth1
 
-![Configuração de IP do Node-A](https://raw.githubusercontent.com/Pocoyo69/PROJETOCL/main/{D3A90BF7-6AD7-4871-9F61-292FFE740EB8}.png)
+<img width="979" height="235" alt="print2" src="https://github.com/user-attachments/assets/5a88210d-0b9e-4bd8-8c10-a347525f81a6" />
 
 * Comandos executados no Node-B:
   ip addr add 10.0.0.2/24 dev eth1
   ip addr show dev eth1
+
+  <img width="978" height="238" alt="print3" src="https://github.com/user-attachments/assets/7d2226cf-e2f3-4246-89d7-2698d42a9640" />
 
 ---
 
@@ -65,7 +67,7 @@ Os resultados obtidos comprovam o perfeito funcionamento da infraestrutura:
 * O `ping` registrou **0% de perda de pacotes**, atestando o tráfego regular na camada de rede.
 * O `tcpdump` interceptou perfeitamente as requisições (`ICMP echo request`) e as respostas (`ICMP echo reply`) associadas aos endereços MAC e IPs corretos de cada interface em tempo real.
 
-![Resultados de Conectividade - Ping e Tcpdump](https://raw.githubusercontent.com/Pocoyo69/PROJETOCL/main/{D3A90BF7-6AD7-4871-9F61-292FFE740EB8}.png)
+<img width="1757" height="834" alt="print4" src="https://github.com/user-attachments/assets/a762f894-3741-41f2-b0ae-31c08fe7fc00" />
 
 ---
 
