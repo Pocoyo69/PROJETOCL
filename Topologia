@@ -1,0 +1,17 @@
+name: lab
+topology:
+  nodes:
+    node-a:
+      kind: linux
+      image: nicolaka/netshoot
+      exec:
+        - ip addr add 10.0.0.1/24 dev eth1
+        - ip link set eth1 up
+    node-b:
+      kind: linux
+      image: nicolaka/netshoot
+      exec:
+        - ip addr add 10.0.0.2/24 dev eth1
+        - ip link set eth1 up
+  links:
+    - endpoints: ["node-a:eth1", "node-b:eth1"]
