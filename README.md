@@ -39,7 +39,7 @@ topology:
 ### 3.1 Deploy da Topologia
 A execução e inicialização do ambiente foram efetuadas na pasta do projeto por meio do comando de deploy do Containerlab. O gerenciador validou a sintaxe, provisionou a rede virtual interna do Docker e colocou os containers em execução, gerando a tabela de nós ativos.
 
-<img width="1280" height="596" alt="print1" src="https://github.com/user-attachments/assets/e24ba05a-ac5b-42bc-a8a8-c36a54f49de7">
+![Tabela de Deploy do Containerlab](https://raw.githubusercontent.com/Pocoyo69/PROJETOCL/main/{E7654F5D-AC76-4EAC-9772-E5BC23B4F4D9}.png)
 
 ---
 
@@ -50,13 +50,11 @@ Com os nós ativos, as interfaces de comunicação ponto a ponto foram configura
   ip addr add 10.0.0.1/24 dev eth1
   ip addr show dev eth1
 
-<img width="979" height="235" alt="print2" src="https://github.com/user-attachments/assets/c6c3f841-c817-49fd-96e5-a8f1a38962d7">
+![Configuração de IP do Node-A](https://raw.githubusercontent.com/Pocoyo69/PROJETOCL/main/{D3A90BF7-6AD7-4871-9F61-292FFE740EB8}.png)
 
 * Comandos executados no Node-B:
   ip addr add 10.0.0.2/24 dev eth1
   ip addr show dev eth1
-
-<img width="978" height="238" alt="print3" src="https://github.com/user-attachments/assets/64062861-f8af-4e5e-8a6d-7e006f074e2f">
 
 ---
 
@@ -67,7 +65,7 @@ Os resultados obtidos comprovam o perfeito funcionamento da infraestrutura:
 * O `ping` registrou **0% de perda de pacotes**, atestando o tráfego regular na camada de rede.
 * O `tcpdump` interceptou perfeitamente as requisições (`ICMP echo request`) e as respostas (`ICMP echo reply`) associadas aos endereços MAC e IPs corretos de cada interface em tempo real.
 
-<img width="1757" height="834" alt="print4" src="https://github.com/user-attachments/assets/4dfd3cc7-16e2-4eca-8b7d-fc42c71c1d9d">
+![Resultados de Conectividade - Ping e Tcpdump](https://raw.githubusercontent.com/Pocoyo69/PROJETOCL/main/{D3A90BF7-6AD7-4871-9F61-292FFE740EB8}.png)
 
 ---
 
