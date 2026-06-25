@@ -39,7 +39,7 @@ topology:
 ### 3.1 Deploy da Topologia
 A execução e inicialização do ambiente foram efetuadas na pasta do projeto por meio do comando de deploy do Containerlab. O gerenciador validou a sintaxe, provisionou a rede virtual interna do Docker e colocou os containers em execução, gerando a tabela de nós ativos.
 
-![Tabela de Deploy do Containerlab](https://raw.githubusercontent.com/Pocoyo69/PROJETOCL/main/{E7654F5D-AC76-4EAC-9772-E5BC23B4F4D9}.png)
+<img width="1280" height="596" alt="print1" src="https://github.com/user-attachments/assets/3df3a18d-7950-4622-9289-2f679041f261" />
 
 ---
 
